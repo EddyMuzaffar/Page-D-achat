@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/tablette.css">
+    <link rel="stylesheet" href="asset/css/smartphone.css">
+    <title>Test-Cours</title>
+</head>
+<body>
+    <div id="notification"></div>
+    <header>
+        <!-- Logo + Panier -->
+        <img id="logo-ecole" src="asset/images/coding.png">
+        <div id="panier" class="panier">
+            <img id="logo-panier" src="asset/images/caddie.png">
+            <ul id="article-panier">
+                <li>
+                    <ul class="row-space-between">
+                        <li></li>
+                        <li></li>
+                        <li style="display:none"></li>
+                        <li><button style="display:none">SUPP LIGNE</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="row-space-between">
+                        <li></li>
+                        <li></li>
+                        <li style="display:none"></li>
+                        <li><button style="display:none">SUPP LIGNE</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="row-space-between">
+                        <li></li>
+                        <li></li>
+                        <li style="display:none"></li>
+                        <li><button style="display:none">SUPP LIGNE</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="row-space-between">
+                        <li></li>
+                        <li></li>
+                        <li style="display:none"></li>
+                        <li><button style="display:none">SUPP LIGNE</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="row-space-between">
+                        <li></li>
+                        <li></li>
+                        <li style="display:none"></li>
+                        <li><button style="display:none">SUPP LIGNE</button></li>
+                    </ul>
+                </li>
+                <button id="SUPPRIMER">Supprimer tout les cours</button>
+            </ul>
+        </div>
+    </header>
+
+    <!-- La barre de recherche -->
+    <div class="search-bar">
+        <input type="recherche" id="recherche-site" aria-label="La recherche sur le site" size=50
+            placeholder="Rechercher ..." onkeyup="search_cours()">
+    </div>
+    
+    
+    
+    <!-- La barre de recherche -->
+    <h1>Cours en ligne</h1>
+    <section class="cours">
+        <div id= "coursvide" class = "hide">
+            </br></br></br></br></br></br></br></br></br><h3 class="courindispo"> Aucun cours n'est disponible</h3>
+
+        </div>
+
+        <div id="uiux" class="cour">
+            <img class="img" src="" alt="">
+            <h2 class="nomcours"></h2>
+            <p class="nb_etoiles"></p>
+            <div class="prix">
+                <p class="prixbase"></p>
+                <p class="prixreduction"></p>
+            </div>
+            <p class="disponibilite"></p>
+
+            <button id="adduiux" class="boutonpanier">
+                <img src="asset/images/caddie.png" alt="">
+                Ajouter au panier
+            </button>
+            
+
+        </div>
+
+        <div id="php" class="cour">
+            <img class="img" src="" alt="">
+            <h2 class="nomcours"></h2>
+            <p class="nb_etoiles"></p>
+            <div class="prix">
+                <p id="prixBase" class="prixbase"></p>
+                <p id="prix" class="prixreduction"></p>
+            </div>
+            <p class="disponibilite"></p>
+
+            <button id="addphp" class="boutonpanier">
+                <img src="asset/images/caddie.png" alt="">
+                Ajouter au panier
+            </button>
+           
+
+        </div>
+
+        <div id="react" class="cour">
+            <img class="img" src="" alt="">
+            <h2 class="nomcours"></h2>
+            <p class="nb_etoiles"></p>
+            <div class="prix">
+                <p id="prixBase" class="prixbase"></p>
+                <p id="prix" class="prixreduction"></p>
+            </div>
+            <p class="disponibilite"></p>
+
+            <button id="addreactjs"class="boutonpanier">
+                <img src="asset/images/caddie.png" alt="">
+                Ajouter au panier
+            </button>
+        </div>
+
+        <div id="node" class="cour">
+            <img class="img" src="" alt="">
+            <h2 class="nomcours"></h2>
+            <p class="nb_etoiles"></p>
+            <div class="prix">
+                <p id="prixBase" class="prixbase"></p>
+                <p id="prix" class="prixreduction"></p>
+            </div>
+            <p class="disponibilite"></p>
+
+            <button id="addnodejs" class="boutonpanier">
+                <img src="asset/images/caddie.png" alt="">
+                Ajouter au panier
+            </button>
+            
+
+        </div>
+
+        <div id="my-sql" class="cour">
+            <img class="img" src="" alt="">
+            <h2 class="nomcours"></h2>
+            <p class="nb_etoiles"></p>
+            <div class="prix">
+                <p id="prixBase" class="prixbase"></p>
+                <p id="prix" class="prixreduction"></p>
+            </div>
+            <p class="disponibilite"></p>
+
+            <button id="addmysql" class="boutonpanier">
+                <img src="asset/images/caddie.png" alt="">
+                Ajouter au panier
+            </button>
+        </div>
+        
+    </section>
+    <script src="asset/js/script.js"></script>
+    <script src="asset/js/search.js"></script>
+</body>
+</html>
